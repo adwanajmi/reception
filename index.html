@@ -17,7 +17,7 @@
     <meta name="theme-color" content="#ffffff">
     <meta property="og:title" content="Walimatul Urus Adwa & Farra">
     <meta property="og:description" content="We would like to invite you to our big day.">
-    <meta property="og:image" content="https://wedding.ramswaroop.me/img/hero-min.jpg">
+    <meta property="og:image" content="img/logo1.png">
     <meta property="og:type" content="website">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -75,10 +75,11 @@
                     <div class="header-nav">
                         <nav>
                             <ul class="primary-nav">
-                                <li><a href="#intro">Pengenalan</a></li>
+                                <li><a href="#invitation">Pengenalan</a></li>
+                                <li><a href="#intro">Tarikh & Waktu</a></li>
                                 <li><a href="#events">Aturcara</a></li>
+                                <li><a href="#map">Lokai</a></li>
                                 <li><a href="#rsvp">RSVP</a></li>
-                                <li><a href="#map">Lokasi</a></li>
                             </ul>
                             <ul class="member-actions">
                                 <li><a href="#map" class="login">Lokasi</a></li>
@@ -387,7 +388,7 @@
         <div class="text-center">
             <h3>Lokasi Majlis</h3>
         </div>
-        <div id="map-canvas"></div>
+        <div id="map-canvas" style="height: 400px;"></div>
         <div id="map-content-wrapper" class="container pointer-events-none">
             <div class="row">
                 <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
@@ -667,24 +668,25 @@
     <script src="js/jquery.mb.YTPlayer.min.js"></script>
     <script src="js/vendor/ouical.js"></script>
     <script src="js/scripts.min.js"></script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBlPw3GQYI3faa_9mRE6plWuM7xNEmrwH0&callback=initMap"></script>
-    <!-- Google Analytics -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r;
-            i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date();
-            a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0];
-            a.async = 1;
-            a.src = g;
-            m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
-        ga('create', 'UA-46465113-4', 'auto');
-        ga('send', 'pageview');
+        document.addEventListener('DOMContentLoaded', function () {
+            // Your location coordinates
+            var location = [3.2016662, 101.7224708];
+
+            // Initialize map
+            var map = L.map('map-canvas').setView(location, 15);
+
+            // Add OpenStreetMap tile layer
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            // Add marker for the location
+            L.marker(location).addTo(map);
+        });
     </script>
+
 
     <!-- Add this script at the end of your HTML file, just before the closing </body> tag -->
     <script>
