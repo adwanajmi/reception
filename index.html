@@ -454,7 +454,7 @@
             <div class="row">
                 <div class="col-md-6 col-md-offset-3">
                     <h3>RSVP</h3>
-                    <p>SIla RSVP sebelum 15 Februari 2024</p>
+                    <p>Sila sahkan kehadiran anda sebelum 15 Februari 2024</p>
                     <div class="formbold-main-wrapper">
                         <div class="formbold-form-wrapper">
                             <form class="rsvp-form"
@@ -470,18 +470,8 @@
                                 <div class="formbold-mb-5">
                                     <label for="noTelefon" class="formbold-form-label"> Nombor Telefon </label>
                                     <input type="tel" name="noTelefon" id="noTelefon" placeholder="No Telefon"
-                                        class="formbold-form-input" pattern="[0-9]{11}"
-                                        title="Sila masukkan 10 digit nombor yang sah" required />
-                                </div>
-
-                                <div class="formbold-mb-5">
-                                    <label for="waktu" class="formbold-form-label"> Waktu </label>
-                                    <select name="waktu" id="waktu" class="formbold-form-input" required>
-                                        <option value="" disabled selected>Sila Pilih</option>
-                                        <option value="1">Sesi 1 : 11-1</option>
-                                        <option value="2">Sesi 2 : 12-3</option>
-                                        <option value="3">Sesi 3 : 1-4</option>
-                                    </select>
+                                        class="formbold-form-input" pattern="[0-9]{10,11}"
+                                        title="Sila masukkan 10 atau 11 digit nombor yang sah" required />
                                 </div>
 
                                 <div class="formbold-mb-5">
@@ -499,6 +489,17 @@
                                 </div>
 
                                 <div id="jumlahKehadiranContainer" style="display: none;">
+
+                                    <div class="formbold-mb-5">
+                                        <label for="waktu" class="formbold-form-label"> Waktu </label>
+                                        <select name="waktu" id="waktu" class="formbold-form-input">
+                                            <option value="" disabled selected>Sila Pilih</option>
+                                            <option value="1">Sesi 1 : 11-1</option>
+                                            <option value="2">Sesi 2 : 12-3</option>
+                                            <option value="3">Sesi 3 : 1-4</option>
+                                        </select>
+                                    </div>
+
                                     <div class="formbold-mb-5">
                                         <label for="jumlahKehadiran" class="formbold-form-label"> Jumlah Kehadiran
                                         </label>
@@ -542,6 +543,9 @@
 
 
         </div>
+
+
+
     </section>
 
     <section id="video-bg" class="hidden-sm hidden-xs">
@@ -552,6 +556,8 @@
 
         </div>
     </section>
+
+
 
     <footer>
         <div class="container">
@@ -573,6 +579,7 @@
     <script src="js/vendor/ouical.js"></script>
     <script src="js/scripts.min.js"></script>
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
 
 </body>
 
