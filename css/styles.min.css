@@ -17,9 +17,10 @@ h2 {
 }
 h3 {
 	color: #3d4351;
+
 	font-size: 18px;
 	font-weight: 700;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: 3px;
 	line-height: 29px;
 }
@@ -344,7 +345,7 @@ section .header {
 }
 .hero {
 	min-height: 750px;
-	background: url("../img/nikah1.jpg") center center;
+	background: url("../img/nikah2.jpg") center center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -1089,17 +1090,6 @@ body {
 	margin-top: 5px;
 }
 
-.scroll-left {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 18px;
-	color: #333;
-	line-height: 1.6;
-	padding: 20px;
-	background-color: #f8f9fa;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Add more styles as needed */
 
 /* music */
@@ -1108,4 +1098,35 @@ body {
 	bottom: 20px;
 	right: 20px;
 	z-index: 1000;
+}
+
+h10 {
+	color: #3d4351;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: 3px;
+	line-height: 29px;
+}
+
+.adwa {
+	font-family: "Belladia", sans-serif;
+}
+
+.floating-navbar {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: #333;
+	padding: 10px 0;
+	z-index: 1000;
+	opacity: 1;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out; /* Added transform transition */
+	display: flex;
+	justify-content: space-around; /* Center the icons */
+	align-items: center; /* Center vertically */
+}
+
+.floating-navbar.hide {
+	opacity: 0;
+	transform: translateY(100%); /* Hide by moving off-screen */
 }

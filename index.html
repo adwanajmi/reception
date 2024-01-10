@@ -58,9 +58,22 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/all.min.css"
         integrity="sha256-CTSx/A06dm1B063156EVh15m6Y67pAjZZaQc89LLSrU=" crossorigin="anonymous">
+    <link href="https://fonts.cdnfonts.com/css/belladia" rel="stylesheet">
 </head>
 
 <body id="top">
+    <nav class="floating-navbar">
+        <!-- Your icon links here -->
+        <a href="#home"><i class="fas fa-home"></i></a>
+        <a class="nav-link" href="#home">
+            <img src="img/ico/1.png" alt="Image Description" style="height: 30px;">
+            <!-- <span class="d-block" style="font-size: 0.7rem;">Home</span> -->
+        </a>
+        <a href="#mempelai"><i class="fas fa-users"></i></a>
+        <a href="#tanggal"><i class="fas fa-calendar"></i></a>
+        <a href="#galeri"><i class="fas fa-images"></i></a>
+    </nav>
+
     <section class="hero">
         <!-- <section class="navigation">
             <header>
@@ -120,16 +133,13 @@
                         Dijemput hadir ke majlis perkahwinan anakanda kami
                     </p>
 
-                    <div class="countdown-container">
-
-                        <div class="overflow-x-hidden">
-                            <div>
-                                <h3>Muhammad Adwa' Najmi bin Rosmadi</h3>
-                            </div><br>
-                            <h4>&</h4>
-                            <div>
-                                <h3> Farra Natasya binti Ahmad Husairi</h3>
-                            </div>
+                    <div class="overflow-x-hidden">
+                        <div>
+                            <h10 class="adwa">Muhammad Adwa' Najmi Bin Rosmadi</h10>
+                        </div><br>
+                        <h10 class="adwa">&</h10>
+                        <div>
+                            <h10 class="adwa"> Farra Natasya Binti Ahmad Husairi</h10>
                         </div>
                     </div>
                 </div>
@@ -139,13 +149,13 @@
 
     <section id="intro">
         <div class="countdown-container">
-
-            <div class="countdown-container">
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="header">BERTEMPAT DI :</h3>
-                    </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">BERTEMPAT DI :</h3>
                 </div>
+            </div>
+            <div class="countdown-container">
+
 
                 <div class="card">
                     <div class="card-body">
@@ -175,39 +185,24 @@
                                 <h3 style="margin: 0;">11:30AM - 4:30PM</h3>
                             </div>
                         </div>
-                        <!-- 
-                    <hr>
-
-                    <div class="col-md-12 text-center">
-                        <h3 class="section-title">Pakaian:</h3>
-                        <div class="program-item"
-                            style="margin-bottom: 20px; display: flex; align-items: center; justify-content: center;">
-                            <h3 style="margin: 0;">Formal atau Traditional</h3>
-                        </div>
-                    </div>
- -->
 
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section class="section-padding" id="events">
         <div class="countdown-container">
-            <div class="countdown-container">
-
-                <div class="row">
-                    <div class="col-md-12 text-center">
-                        <h3 class="header">ATURCARA MAJLIS</h3>
-                    </div>
-                    <hr>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h3 class="header">ATURCARA MAJLIS</h3>
                 </div>
+            </div>
+            <div class="countdown-container">
                 <div class="row text-center">
-                    <div class="col-md-6 col-sm-12 col-xs-12 leftcol">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="wp3">
-
                             <h5>Kehadiran Tetamu</h5>
                             <span class="time">11:30 pagi</span>
                             <p></p>
@@ -218,7 +213,7 @@
                             <p></p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12 rightcol">
+                    <div class="col-md-6 col-sm-12 col-xs-12">
                         <div class="wp4">
                             <h5>Makan Beradab</h5>
                             <span class="time">2:00 petang</span>
@@ -233,7 +228,7 @@
                 </div>
 
                 <div class="row section-padding">
-                    <div class="col-md-4 col-md-offset-4 text-center">
+                    <div class="col-md-12 text-center">
                         <a class="btn btn-accent btn-small" data-toggle="modal" data-target="#dc-modal">
                             <i class="fa fa-barcode"></i>&nbsp;&nbsp;Kod Pakaian
                         </a>
@@ -249,16 +244,15 @@
                                 <h3 class="text-center section-padding">KOD PAKAIAN</h3>
                                 <hr>
                                 <h5 class="text-center"><b>FORMAL <p><br></p> ATAU <p><br></p> TRADITIONAL</b></h5>
-
                                 <br><br>
                             </div>
                         </div><!-- /.modal-content -->
                     </div><!-- /.modal-dialog -->
                 </div>
             </div>
-
         </div>
     </section>
+
 
     <section id="countdown" class="section-padding">
         <div class="countdown-container">
@@ -270,8 +264,7 @@
                 </div>
                 <hr>
 
-                <!-- Change the data-target-date attribute to the target date and time -->
-                <div class="row justify-content-center" id="tampilan-waktu" data-target-date="2024-02-25T11:00:00">
+                <div class="justify-content-center" id="tampilan-waktu" data-target-date="2024-02-25T11:00:00">
                     <div class="col-3 p-1 countdown-item">
                         <h2 class="countdown-value" id="Days">0</h2>
                         <small class="countdown-label">Days</small>
@@ -289,8 +282,6 @@
                         <small class="countdown-label">Seconds</small>
                     </div>
                 </div>
-
-
             </div>
 
             <br>
@@ -320,17 +311,16 @@
     </section>
 
     <section id="map" class="section-padding">
-        <div class="countdown-container row">
-            <div class="text-center">
-                <h3>Navigasi</h3>
-            </div>
+        <div class="countdown-container row"
+            style="background-image: url('img/map.png'); background-size: cover; background-position: center;">
+
             <div class="col-xs-offset-1 col-xs-10 col-md-offset-3 col-md-6">
-                <div class="text-center">
-                    <div id="btn-show-content" class="toggle-map-content pointer-events-auto">
-                        <i class="fa fa-info-circle"></i>&nbsp;&nbsp; Show info
-                    </div>
-                </div>
+
                 <div id="map-content" class="pointer-events-auto">
+                    <div class="text-center">
+                        <h3>Lokasi Majlis</h3>
+                    </div>
+                    <hr>
                     <div class="row">
                         <div class="col-md-6">
                             <h5>The Gabion Garden Hall</h5>
@@ -356,23 +346,24 @@
     </section>
 
     <section id="contact">
+        <div class="text-center">
+            <h3>Hubungi</h3>
+        </div>
         <div class="countdown-container">
-            <div class="text-center">
-                <h3>Hubungi</h3>
-            </div>
+
 
             <div class="text-center">
-
                 <div class="col-md-6">
                     <h5>EN ROSMADI SAAD</h5>
-                    <p><i class="fa fa-mobile"></i> <a href="tel://+0192130511">+0192130511</a>
+                    <p><i class="fa fa-mobile"></i> <a href="tel:+0192130511">+0192130511</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/60192130511" target="_blank">WhatsApp</a>
                     </p>
                 </div>
                 <div class="col-md-6">
                     <h5>PN Siti Haida</h5>
-                    <p><i class="fa fa-mobile"></i> <a href="tel://+60193556920">+60193556920</a>
+                    <p><i class="fa fa-mobile"></i> <a href="tel:+60193556920">+60193556920</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/60193556920" target="_blank">WhatsApp</a>
                     </p>
-
                 </div>
             </div>
         </div>
@@ -394,90 +385,92 @@
                 </div><!-- /.modal-content -->
             </div><!-- /.modal-dialog -->
         </div><!-- /.modal -->
-
         <div class="countdown-container">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <h3 class="text-center">RSVP</h3>
-                    <p class="text-center">Sila sahkan kehadiran anda sebelum 15 Februari 2024</p>
-                    <form class="rsvp-form"
-                        action="https://script.google.com/macros/s/AKfycbwZHqbGbCTyoZ7TaUoP5IREERGrAQLwgqc2gA20xdx_BA8xeAmSg7w9dQUtMrvOMUKCzg/exec"
-                        method="POST">
+            <h3 class="text-center">RSVP</h3>
+            <p class="text-center">Sila sahkan kehadiran anda sebelum 15 Februari 2024</p>
 
-                        <div class="formbold-mb-5">
-                            <label for="nama" class="formbold-form-label"> Nama </label>
-                            <input type="text" name="nama" id="nama" placeholder="Nama" class="formbold-form-input"
-                                required />
-                        </div>
-
-                        <div class="formbold-mb-5">
-                            <label for="noTelefon" class="formbold-form-label"> Nombor Telefon </label>
-                            <input type="tel" name="noTelefon" id="noTelefon" placeholder="No Telefon"
-                                class="formbold-form-input" pattern="[0-9]{10,11}"
-                                title="Sila masukkan 10 atau 11 digit nombor yang sah" required />
-                        </div>
-
-                        <div class="formbold-mb-5">
-                            <label for="hadir" class="formbold-form-label"> Hadir </label>
-                            <div class="flex">
-                                <input type="radio" name="hadir" id="radioButtonYes" value="Yes" class="formbold-radio"
-                                    required />
-                                <label for="radioButtonYes" class="formbold-radio-label"> Ya </label>
-                            </div>
-                            <div class="flex">
-                                <input type="radio" name="hadir" id="radioButtonNo" value="No" class="formbold-radio"
-                                    required />
-                                <label for="radioButtonNo" class="formbold-radio-label"> Tidak </label>
-                            </div>
-                        </div>
-
-                        <div id="jumlahKehadiranContainer" style="display: none;">
+            <div class="countdown-container">
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3">
+                        <form class="rsvp-form"
+                            action="https://script.google.com/macros/s/AKfycbwZHqbGbCTyoZ7TaUoP5IREERGrAQLwgqc2gA20xdx_BA8xeAmSg7w9dQUtMrvOMUKCzg/exec"
+                            method="POST">
 
                             <div class="formbold-mb-5">
-                                <label for="waktu" class="formbold-form-label"> Waktu </label>
-                                <select name="waktu" id="waktu" class="formbold-form-input">
-                                    <option value="" disabled selected>Sila Pilih</option>
-                                    <option value="1">Sesi Pagi : 11AM-1PM</option>
-                                    <option value="2">Sesi Tengahari : 12PM-3PM</option>
-                                    <option value="3">Sesi Petang : 2PM-4PM</option>
-                                </select>
+                                <label for="nama" class="formbold-form-label"> Nama </label>
+                                <input type="text" name="nama" id="nama" placeholder="Nama" class="formbold-form-input"
+                                    required />
                             </div>
 
                             <div class="formbold-mb-5">
-                                <label for="jumlahKehadiran" class="formbold-form-label"> Jumlah Kehadiran
-                                </label>
-                                <select name="jumlahKehadiran" id="jumlahKehadiran" class="formbold-form-input">
-                                    <option value="" disabled selected>Sila Pilih</option>
-                                    <option value="1">1 Orang</option>
-                                    <option value="2">2 Orang</option>
-                                    <option value="3">3 Orang</option>
-                                    <option value="4">4 Orang</option>
-                                    <option value="5">5 Orang</option>
-                                    <option value="6">6 Orang</option>
-                                    <option value="7">7 Orang</option>
-                                    <option value="8">8 Orang</option>
-                                    <option value="9">9 Orang</option>
-                                    <option value="10">10 Orang</option>
-                                </select>
+                                <label for="noTelefon" class="formbold-form-label"> Nombor Telefon </label>
+                                <input type="tel" name="noTelefon" id="noTelefon" placeholder="No Telefon"
+                                    class="formbold-form-input" pattern="[0-9]{10,11}"
+                                    title="Sila masukkan 10 atau 11 digit nombor yang sah" required />
                             </div>
-                        </div>
 
-                        <div class="formbold-mb-5">
-                            <label for="ucapan" class="formbold-form-label"> Ucapan </label>
-                            <textarea name="ucapan" id="ucapan" placeholder="Jika Ada"
-                                class="formbold-form-input"></textarea>
-                        </div>
-
-                        <div id="submit-container" class="text-center">
-                            <div id="loading-container" style="display:none;">
-                                <button class="formbold-btn" disabled>
-                                    <span class="spinner"></span> Loading...
-                                </button>
+                            <div class="formbold-mb-5">
+                                <label for="hadir" class="formbold-form-label"> Hadir </label>
+                                <div class="flex">
+                                    <input type="radio" name="hadir" id="radioButtonYes" value="Yes"
+                                        class="formbold-radio" required />
+                                    <label for="radioButtonYes" class="formbold-radio-label"> Ya </label>
+                                </div>
+                                <div class="flex">
+                                    <input type="radio" name="hadir" id="radioButtonNo" value="No"
+                                        class="formbold-radio" required />
+                                    <label for="radioButtonNo" class="formbold-radio-label"> Tidak </label>
+                                </div>
                             </div>
-                            <button class="formbold-btn" id="hantar-button">Hantar</button>
-                        </div>
 
-                    </form>
+                            <div id="jumlahKehadiranContainer" style="display: none;">
+
+                                <div class="formbold-mb-5">
+                                    <label for="waktu" class="formbold-form-label"> Waktu </label>
+                                    <select name="waktu" id="waktu" class="formbold-form-input">
+                                        <option value="" disabled selected>Sila Pilih</option>
+                                        <option value="1">Sesi Pagi : 11AM-1PM</option>
+                                        <option value="2">Sesi Tengahari : 12PM-3PM</option>
+                                        <option value="3">Sesi Petang : 2PM-4PM</option>
+                                    </select>
+                                </div>
+
+                                <div class="formbold-mb-5">
+                                    <label for="jumlahKehadiran" class="formbold-form-label"> Jumlah Kehadiran
+                                    </label>
+                                    <select name="jumlahKehadiran" id="jumlahKehadiran" class="formbold-form-input">
+                                        <option value="" disabled selected>Sila Pilih</option>
+                                        <option value="1">1 Orang</option>
+                                        <option value="2">2 Orang</option>
+                                        <option value="3">3 Orang</option>
+                                        <option value="4">4 Orang</option>
+                                        <option value="5">5 Orang</option>
+                                        <option value="6">6 Orang</option>
+                                        <option value="7">7 Orang</option>
+                                        <option value="8">8 Orang</option>
+                                        <option value="9">9 Orang</option>
+                                        <option value="10">10 Orang</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="formbold-mb-5">
+                                <label for="ucapan" class="formbold-form-label"> Ucapan </label>
+                                <textarea name="ucapan" id="ucapan" placeholder="Jika Ada"
+                                    class="formbold-form-input"></textarea>
+                            </div>
+
+                            <div id="submit-container" class="text-center">
+                                <div id="loading-container" style="display:none;">
+                                    <button class="formbold-btn" disabled>
+                                        <span class="spinner"></span> Loading...
+                                    </button>
+                                </div>
+                                <button class="formbold-btn" id="hantar-button">Hantar</button>
+                            </div>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
