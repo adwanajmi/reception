@@ -336,24 +336,25 @@
         </div>
     </section>
 
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Terima Kasih!</h3>
+                        <p>Kami gembira melihat anda bersama-sama menyertai majlis kami yang besar ini.</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
 
     <section class="rsvp text-center" id="rsvp">
 
-        <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
-                        </button>
-                        <div class="section-padding">
-                            <h3>Terima Kasih!</h3>
-                            <p>Kami gembira melihat anda bersama-sama menyertai majlis kami yang besar ini.</p>
-                            <div id="add-to-cal"></div>
-                        </div>
-                    </div>
-                </div><!-- /.modal-content -->
-            </div><!-- /.modal-dialog -->
-        </div><!-- /.modal -->
+
 
         <div class="countdown-container">
             <div class="row">
@@ -428,12 +429,12 @@
                                 class="formbold-form-input"></textarea>
                         </div>
 
-                        <div id="loading-container" style="display:none;">
-                            <button class="formbold-btn" disabled>
-                                <span class="spinner"></span> Loading...
-                            </button>
-                        </div>
                         <div id="submit-container" class="text-center">
+                            <div id="loading-container" style="display:none;">
+                                <button class="formbold-btn" disabled>
+                                    <span class="spinner"></span> Loading...
+                                </button>
+                            </div>
                             <button class="formbold-btn" id="hantar-button">Hantar</button>
                         </div>
 
