@@ -1060,3 +1060,44 @@ body {
 		transform: rotate(360deg);
 	}
 }
+
+/* countdown */
+
+.countdown-container {
+	background-color: #f8f9fa;
+	border: 1px solid #dcdcdc;
+	border-radius: 20px;
+	padding: 20px;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.countdown-item {
+	text-align: center;
+}
+
+.countdown-value {
+	font-size: 2em;
+	font-weight: bold;
+	color: #333;
+	display: block;
+	margin: 0;
+}
+
+.countdown-label {
+	color: #555;
+	margin-top: 5px;
+}
+
+.scroll-left {
+	font-family: Snell Roundhand;
+	font-size: 18px;
+	color: #333;
+	line-height: 1.6;
+	padding: 20px;
+	background-color: #f8f9fa;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Add more styles as needed */
