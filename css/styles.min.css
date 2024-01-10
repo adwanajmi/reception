@@ -1109,13 +1109,3 @@ body {
 	right: 20px;
 	z-index: 1000;
 }
-
-/* rsvp google */
-.rsvp-container {
-	background-color: #f8f9fa;
-	border: 1px solid #dcdcdc;
-	border-radius: 20px;
-	padding: 20px;
-	max-width: 400px;
-	margin: 0 auto;
-}
